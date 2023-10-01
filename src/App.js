@@ -16,9 +16,9 @@ import UseLocalStorageHook from './hooks_components/UseLocalStorageHook';
 function App() {
   return (
     <div className="App">
-      <StateHook />
-      {/* <UseEffectHook />
-      <UseContextHook />
+      {/* <StateHook /> */}
+      <UseEffectHook />
+      {/*<UseContextHook />
       <UseReducerHook />
       <UseMemoHook />
       <UseCallBackHook />
