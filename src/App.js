@@ -19,9 +19,9 @@ function App() {
       {/* <StateHook /> */}
       {/* <UseEffectHook /> */}
       {/* <UseContextHook /> */}
-      <UseReducerHook />
-      {/*<UseMemoHook />
-      <UseCallBackHook />
+      {/* <UseReducerHook /> */}
+      <UseMemoHook />
+      {/*<UseCallBackHook />
       <UseRefHook />
       <UseImperativeHook />
       <UseLayoutEffectHook />
