@@ -24,9 +24,9 @@ function App() {
       {/* <UseCallBackHook /> */}
       {/* <UseRefHook /> */}
       {/* <UseImperativeHook /> */}
-      <UseLayoutEffectHook />
-      {/*<UseLoggerHook />
-      <UseDebugValueHook />
+      {/* <UseLayoutEffectHook /> */}
+      <UseLoggerHook />
+      {/*<UseDebugValueHook />
       <UseLocalStorageHook /> */}
     </div>
   );
