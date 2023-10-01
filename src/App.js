@@ -26,8 +26,8 @@ function App() {
       {/* <UseImperativeHook /> */}
       {/* <UseLayoutEffectHook /> */}
       {/* <UseLoggerHook /> */}
-      <UseDebugValueHook />
-      {/* <UseLocalStorageHook /> */}
+      {/* <UseDebugValueHook /> */}
+      <UseLocalStorageHook />
     </div>
   );
 }
