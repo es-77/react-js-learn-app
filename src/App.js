@@ -18,9 +18,9 @@ function App() {
     <div className="App">
       {/* <StateHook /> */}
       {/* <UseEffectHook /> */}
-      <UseContextHook />
-      {/*<UseReducerHook />
-      <UseMemoHook />
+      {/* <UseContextHook /> */}
+      <UseReducerHook />
+      {/*<UseMemoHook />
       <UseCallBackHook />
       <UseRefHook />
       <UseImperativeHook />
