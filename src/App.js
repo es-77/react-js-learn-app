@@ -19,6 +19,7 @@ import TopBar from './components/nav_bar_components/TopBar';
 import ErrorPage from './components/routing_components/ErrorPage';
 import GetIdToUrl from './components/routing_components/GetIdToUrl';
 import ContactPage from './components/routing_components/ContactPage';
+import LinkStateData from './components/routing_components/LinkStateData';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/get-id/:id' element={<GetIdToUrl />} />
         <Route path='/contact-page' element={<ContactPage />} />
+        <Route path='/state-data' element={<LinkStateData />} />
         {/* <Route path='*' element={<ErrorPage />} /> */}
         <Route path='*' element={<Navigate to='/' />} />
         {/* route grouping  */}
