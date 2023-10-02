@@ -24,6 +24,9 @@ function TopBar() {
                 <NavLink style={({ isActive }) => {
                     return { color: isActive ? 'red' : '' }
                 }} to="/state-data" state={{ name: 'emmaneul', father: 'saleem' }}> | also pass data through state in link </NavLink>
+                <NavLink style={({ isActive }) => {
+                    return { color: isActive ? 'red' : '' }
+                }} to="/class"> Go to class</NavLink>
             </ul>
         </div>
     )
