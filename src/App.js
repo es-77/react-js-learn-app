@@ -39,6 +39,11 @@ function App() {
         <Route path='/about' element={<About />} />
         {/* <Route path='*' element={<ErrorPage />} /> */}
         <Route path='*' element={<Navigate to='/' />} />
+        {/* route grouping  */}
+        <Route path='/admin' element={<TopBar />}>
+          <Route path='/admin/home' element={<Home />} />
+          <Route path='/admin/about' element={<About />} />
+        </Route>
       </Routes>
     </div>
   );
