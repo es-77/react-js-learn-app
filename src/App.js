@@ -12,10 +12,15 @@ import UseLayoutEffectHook from './hooks_components/UseLayoutEffectHook';
 import UseLoggerHook from './hooks_components/UseLoggerHook';
 import UseDebugValueHook from './hooks_components/UseDebugValueHook';
 import UseLocalStorageHook from './hooks_components/UseLocalStorageHook';
+import { Route, Routes } from 'react-router-dom';
+import Home from './components/routing_components/Home';
+import About from './components/routing_components/About';
+import TopBar from './components/nav_bar_components/TopBar';
 
 function App() {
   return (
     <div className="App">
+      <TopBar />
       {/* <StateHook /> */}
       {/* <UseEffectHook /> */}
       {/* <UseContextHook /> */}
@@ -27,7 +32,11 @@ function App() {
       {/* <UseLayoutEffectHook /> */}
       {/* <UseLoggerHook /> */}
       {/* <UseDebugValueHook /> */}
-      <UseLocalStorageHook />
+      {/* <UseLocalStorageHook /> */}
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+      </Routes>
     </div>
   );
 }
