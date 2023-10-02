@@ -12,10 +12,11 @@ import UseLayoutEffectHook from './hooks_components/UseLayoutEffectHook';
 import UseLoggerHook from './hooks_components/UseLoggerHook';
 import UseDebugValueHook from './hooks_components/UseDebugValueHook';
 import UseLocalStorageHook from './hooks_components/UseLocalStorageHook';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Home from './components/routing_components/Home';
 import About from './components/routing_components/About';
 import TopBar from './components/nav_bar_components/TopBar';
+import ErrorPage from './components/routing_components/ErrorPage';
 
 function App() {
   return (
@@ -36,6 +37,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
+        {/* <Route path='*' element={<ErrorPage />} /> */}
+        <Route path='*' element={<Navigate to='/' />} />
       </Routes>
     </div>
   );
