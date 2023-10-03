@@ -27,6 +27,7 @@ import PropsEvent from './function_components/PropsEvent';
 import ChildToParentDataPass from './function_components/ChildToParentDataPass';
 import MapFunction from './function_components/MapFunction';
 import HigherOrderComponents from './function_components/HigherOrderComponents';
+import PropsRender from './function_components/PropsRender';
 
 function App() {
   return (
@@ -68,7 +69,8 @@ function App() {
       {/* <PropsEvent/> */}
       {/* <ChildToParentDataPass/> */}
       {/* <MapFunction/> */}
-      <HigherOrderComponents/>
+      {/* <HigherOrderComponents/> */}
+      <PropsRender/>
     </div>
   );
 }
