@@ -21,11 +21,14 @@ import GetIdToUrl from './components/routing_components/GetIdToUrl';
 import ContactPage from './components/routing_components/ContactPage';
 import LinkStateData from './components/routing_components/LinkStateData';
 import Class from './components/routing_components/decentant_components/Class';
+import ArrowFunction from './function_components/ArrowFunction';
+import ExportDefaultOrExport, { MyFunction1, MyFunction2 } from './function_components/ExportDefaultOrExport';
+import PropsEvent from './function_components/PropsEvent';
+import ChildToParentDataPass from './function_components/ChildToParentDataPass';
 
 function App() {
   return (
     <div className="App">
-      <TopBar />
       {/* <StateHook /> */}
       {/* <UseEffectHook /> */}
       {/* <UseContextHook /> */}
@@ -38,21 +41,30 @@ function App() {
       {/* <UseLoggerHook /> */}
       {/* <UseDebugValueHook /> */}
       {/* <UseLocalStorageHook /> */}
+      {/* <TopBar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/get-id/:id' element={<GetIdToUrl />} />
         <Route path='/contact-page' element={<ContactPage />} />
-        <Route path='/state-data' element={<LinkStateData />} />
-        <Route path='/class/*' element={<Class />} />
+        <Route path='/state-data' element={<LinkStateData />} /> */}
+        {/* <Route path='/class/*' element={<Class />} /> */}
         {/* <Route path='*' element={<ErrorPage />} /> */}
-        <Route path='*' element={<Navigate to='/' />} />
+        {/* <Route path='*' element={<Navigate to='/' />} /> */}
         {/* route grouping  */}
-        <Route path='/admin' element={<TopBar />}>
+        {/* <Route path='/admin' element={<TopBar />}>
           <Route path='/admin/home' element={<Home />} />
           <Route path='/admin/about' element={<About />} />
         </Route>
-      </Routes>
+      </Routes> */}
+
+      {/* function components  */}
+      {/* <ArrowFunction/> */}
+      {/* <ExportDefaultOrExport/>
+      <MyFunction1/>
+      <MyFunction2/> */}
+      {/* <PropsEvent/> */}
+      <ChildToParentDataPass/>
     </div>
   );
 }
