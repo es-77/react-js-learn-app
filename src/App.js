@@ -28,6 +28,7 @@ import ChildToParentDataPass from './function_components/ChildToParentDataPass';
 import MapFunction from './function_components/MapFunction';
 import HigherOrderComponents from './function_components/HigherOrderComponents';
 import PropsRender from './function_components/PropsRender';
+import ContextApiFunction from './hooks_components/ContextApiFunction';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
       {/* <UseLoggerHook /> */}
       {/* <UseDebugValueHook /> */}
       {/* <UseLocalStorageHook /> */}
+      <ContextApiFunction/>
       {/* <TopBar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -70,7 +72,7 @@ function App() {
       {/* <ChildToParentDataPass/> */}
       {/* <MapFunction/> */}
       {/* <HigherOrderComponents/> */}
-      <PropsRender/>
+      {/* <PropsRender/> */}
     </div>
   );
 }
