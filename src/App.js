@@ -25,6 +25,7 @@ import ArrowFunction from './function_components/ArrowFunction';
 import ExportDefaultOrExport, { MyFunction1, MyFunction2 } from './function_components/ExportDefaultOrExport';
 import PropsEvent from './function_components/PropsEvent';
 import ChildToParentDataPass from './function_components/ChildToParentDataPass';
+import MapFunction from './function_components/MapFunction';
 
 function App() {
   return (
@@ -64,7 +65,8 @@ function App() {
       <MyFunction1/>
       <MyFunction2/> */}
       {/* <PropsEvent/> */}
-      <ChildToParentDataPass/>
+      {/* <ChildToParentDataPass/> */}
+      <MapFunction/>
     </div>
   );
 }
