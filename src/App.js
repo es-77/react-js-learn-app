@@ -45,7 +45,7 @@ function App() {
       {/* <UseLoggerHook /> */}
       {/* <UseDebugValueHook /> */}
       {/* <UseLocalStorageHook /> */}
-      <ContextApiFunction/>
+      {/* <ContextApiFunction/> */}
       {/* <TopBar />
       <Routes>
         <Route path='/' element={<Home />} />

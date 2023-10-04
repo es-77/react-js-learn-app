@@ -1,0 +1,16 @@
+{
+    "superheroes":[
+    {
+        "id":1,
+        "name": "batman"
+    },
+    {
+        "id":2,
+        "name": "supper man"
+    },
+    {
+        "id":2,
+        "name": "wonder woman"
+    }
+]
+}
