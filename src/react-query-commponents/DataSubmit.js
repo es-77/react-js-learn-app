@@ -32,7 +32,7 @@ function DataSubmit() {
             </form>
 
             <div>
-                {data?.data.map((hero) => {
+                {data?.data?.map((hero) => {
                     return <p key={hero?.id}>{hero?.name}</p>
                 })}
             </div>

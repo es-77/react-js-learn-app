@@ -8,11 +8,24 @@ const saveHero = (heroData) => {
 // export const useSaveSuperHero = () => {
 //     return useMutation(saveHero);
 // }
+// export const useSaveSuperHero = () => {
+//     const queryClient = useQueryClient();
+//     return useMutation(saveHero, {
+//         onSuccess: () => {
+//             queryClient.invalidateQueries('my-herors-data');
+//         }
+//     });
+// }
 export const useSaveSuperHero = () => {
     const queryClient = useQueryClient();
     return useMutation(saveHero, {
-        onSuccess: () => {
-            queryClient.invalidateQueries('my-herors-data');
+        onSuccess: (data) => {
+            queryClient.setQueryData('my-herors-data', (oldQueryData) => {
+                return {
+                    ...oldQueryData,
+                    data: [...oldQueryData.data, data.data],
+                }
+            });
         }
     });
 }
