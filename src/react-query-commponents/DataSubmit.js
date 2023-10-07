@@ -7,7 +7,7 @@ const getHeros = () => {
     return axios.get('http://localhost:4000/superheroes');
 }
 function DataSubmit() {
-    const { isLoading, data } = useQuery('my-herors', getHeros);
+    const { isLoading, data } = useQuery('my-herors-data', getHeros);
     const [name, setName] = useState('');
     const [last, setLast] = useState('');
     const { mutate: heroSave } = useSaveSuperHero()
