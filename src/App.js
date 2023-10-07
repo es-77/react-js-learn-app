@@ -106,7 +106,7 @@ function App() {
           <Route path='/qr-query-by-id/:id' element={<SingleSuperHero />} />
           <Route path='/qr-parallel-query' element={<ParallelQueries />} />
           <Route path='/qr-dynamic-query' element={<DynamicQuery herorIds={[1, 2]} />} />
-          <Route path='/qr-depend-query' element={<DependQuery />} />
+          <Route path='/qr-depend-query' element={<DependQuery userEmail='admin@admin.com' />} />
         </Routes>
         <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
       </QueryClientProvider>

@@ -30,6 +30,37 @@
       "id":3,
       "name":"wonder woman"
     }
+  ],
+  "users":[
+    {
+      "id":"admin@admin.com",
+      "email":1,
+      "addressId":1
+    },
+    {
+      "id":"admin2@admin.com",
+      "email":2,
+      "addressId":2
+    },
+    {
+      "id":"admin3@admin.com",
+      "email":3,
+      "addressId":3
+    }
+  ],
+  "address":[
+    {
+      "id":1,
+      "addres":"my addres 1"
+    },
+    {
+      "id":2,
+      "addres":"my addres 2"
+    },
+    {
+      "id":3,
+      "addres":"my addres 3"
+    }
   ]
 }
  
