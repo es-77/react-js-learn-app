@@ -12,6 +12,7 @@ function RQNavBar() {
                 <Link to='/qr-get-data-on-button-click'> | Get Data On Button Click</Link>
                 <Link to='/qr-success-error-fall-back'> | Success Error Fall Back</Link>
                 <Link to='/qr-data-transform'> | Data Transform</Link>
+                <Link to='/qr-custom-hook'> | Data Custom Hook</Link>
             </p>
         </div>
     )
