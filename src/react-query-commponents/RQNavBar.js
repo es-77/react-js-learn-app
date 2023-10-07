@@ -15,6 +15,8 @@ function RQNavBar() {
                 <Link to='/qr-custom-hook'> | Data Custom Hook</Link>
                 <Link to='/qr-query-by-id'> | Query By Id</Link>
                 <Link to='/qr-parallel-query'> | Parallel Query</Link>
+                <Link to='/qr-dynamic-query'> | Dynamic Query</Link>
+                <Link to='/qr-depend-query'> | Depend Query</Link>
             </p>
         </div>
     )

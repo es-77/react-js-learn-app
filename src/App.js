@@ -43,6 +43,8 @@ import RQDataTransform from './react-query-commponents/RQDataTransform';
 import CustomHookCall from './react-query-commponents/CustomHookCall';
 import SingleSuperHero from './react-query-commponents/SingleSuperHero';
 import ParallelQueries from './react-query-commponents/ParallelQueries';
+import DynamicQuery from './react-query-commponents/DynamicQuery';
+import DependQuery from './react-query-commponents/DependQuery';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -103,6 +105,8 @@ function App() {
           <Route path='/qr-custom-hook' element={<CustomHookCall />} />
           <Route path='/qr-query-by-id/:id' element={<SingleSuperHero />} />
           <Route path='/qr-parallel-query' element={<ParallelQueries />} />
+          <Route path='/qr-dynamic-query' element={<DynamicQuery herorIds={[1, 2]} />} />
+          <Route path='/qr-depend-query' element={<DependQuery />} />
         </Routes>
         <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
       </QueryClientProvider>
