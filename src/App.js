@@ -29,7 +29,16 @@ import MapFunction from './function_components/MapFunction';
 import HigherOrderComponents from './function_components/HigherOrderComponents';
 import PropsRender from './function_components/PropsRender';
 import ContextApiFunction from './hooks_components/ContextApiFunction';
-
+import RQNavBar from './react-query-commponents/RQNavBar'
+import ReactQueryHome from './react-query-commponents/ReactQueryHome'
+import RQAbout from './react-query-commponents/RQAbout'
+import RQOldMethodGetData from './react-query-commponents/RQOldMethodGetData';
+import RQGetData from './react-query-commponents/RQGetData';
+import { QueryClientProvider, QueryClient } from "react-query"
+import { ReactQueryDevtools } from "react-query/devtools"
+import RQPolling from './react-query-commponents/RQPolling';
+import RQFetchDataOnButtonClick from './react-query-commponents/RQFetchDataOnButtonClick';
+const queryClient = new QueryClient();
 function App() {
   return (
     <div className="App">
@@ -45,7 +54,7 @@ function App() {
       {/* <UseLoggerHook /> */}
       {/* <UseDebugValueHook /> */}
       {/* <UseLocalStorageHook /> */}
-      <ContextApiFunction/>
+      {/* <ContextApiFunction/> */}
       {/* <TopBar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -53,11 +62,11 @@ function App() {
         <Route path='/get-id/:id' element={<GetIdToUrl />} />
         <Route path='/contact-page' element={<ContactPage />} />
         <Route path='/state-data' element={<LinkStateData />} /> */}
-        {/* <Route path='/class/*' element={<Class />} /> */}
-        {/* <Route path='*' element={<ErrorPage />} /> */}
-        {/* <Route path='*' element={<Navigate to='/' />} /> */}
-        {/* route grouping  */}
-        {/* <Route path='/admin' element={<TopBar />}>
+      {/* <Route path='/class/*' element={<Class />} /> */}
+      {/* <Route path='*' element={<ErrorPage />} /> */}
+      {/* <Route path='*' element={<Navigate to='/' />} /> */}
+      {/* route grouping  */}
+      {/* <Route path='/admin' element={<TopBar />}>
           <Route path='/admin/home' element={<Home />} />
           <Route path='/admin/about' element={<About />} />
         </Route>
@@ -73,6 +82,20 @@ function App() {
       {/* <MapFunction/> */}
       {/* <HigherOrderComponents/> */}
       {/* <PropsRender/> */}
+
+      {/* react query  */}
+      <RQNavBar />
+      <QueryClientProvider client={queryClient}>
+        <Routes>
+          <Route path='/qr-home' element={<ReactQueryHome />} />
+          <Route path='/qr-about' element={<RQAbout />} />
+          <Route path='/qr-old-method' element={<RQOldMethodGetData />} />
+          <Route path='/qr-load-data-react-query' element={<RQGetData />} />
+          <Route path='/qr-poling' element={<RQPolling />} />
+          <Route path='/qr-get-data-on-button-click' element={<RQFetchDataOnButtonClick />} />
+        </Routes>
+        <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
+      </QueryClientProvider>
     </div>
   );
 }
