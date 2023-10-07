@@ -61,6 +61,29 @@
       "id":3,
       "addres":"my addres 3"
     }
-  ]
+  ],
+  "colors":[
+  { "id": 1, "label": "red" },
+  { "id": 2, "label": "blue" },
+  { "id": 3, "label": "green" },
+  { "id": 4, "label": "yellow" },
+  { "id": 5, "label": "orange" },
+  { "id": 6, "label": "purple" },
+  { "id": 7, "label": "pink" },
+  { "id": 8, "label": "brown" },
+  { "id": 9, "label": "gray" },
+  { "id": 10, "label": "white" },
+  { "id": 11, "label": "black" },
+  { "id": 12, "label": "cyan" },
+  { "id": 13, "label": "magenta" },
+  { "id": 14, "label": "turquoise" },
+  { "id": 15, "label": "olive" },
+  { "id": 16, "label": "lavender" },
+  { "id": 17, "label": "maroon" },
+  { "id": 18, "label": "gold" },
+  { "id": 19, "label": "silver" },
+  { "id": 20, "label": "teal" }
+]
+
 }
  

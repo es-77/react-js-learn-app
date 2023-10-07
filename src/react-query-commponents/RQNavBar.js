@@ -17,6 +17,7 @@ function RQNavBar() {
                 <Link to='/qr-parallel-query'> | Parallel Query</Link>
                 <Link to='/qr-dynamic-query'> | Dynamic Query</Link>
                 <Link to='/qr-depend-query'> | Depend Query</Link>
+                <Link to='/qr-paginated-query'> | Paginated Query</Link>
             </p>
         </div>
     )
