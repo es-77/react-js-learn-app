@@ -23,6 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "serve-json": "json-server --watch db.json --port 4000"
+
   },
   "eslintConfig": {
     "extends": [
