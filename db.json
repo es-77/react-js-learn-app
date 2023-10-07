@@ -16,74 +16,139 @@
   "profile": {
     "name": "typicode"
   },
-  "superheroes":[
+  "superheroes": [
     {
-      "id":1,
-      "name":"batman"
-
+      "id": 1,
+      "name": "batman"
     },
     {
-      "id":2,
-      "name":"super man"
+      "id": 2,
+      "name": "super man"
     },
     {
-      "id":3,
-      "name":"wonder woman"
+      "id": 3,
+      "name": "wonder woman"
+    },
+    {
+      "name": "emmnauel ",
+      "id": 4
+    },
+    {
+      "name": "emmnauel 123",
+      "id": 5
     }
   ],
-  "users":[
+  "users": [
     {
-      "id":"admin@admin.com",
-      "email":1,
-      "addressId":1
+      "id": "admin@admin.com",
+      "email": 1,
+      "addressId": 1
     },
     {
-      "id":"admin2@admin.com",
-      "email":2,
-      "addressId":2
+      "id": "admin2@admin.com",
+      "email": 2,
+      "addressId": 2
     },
     {
-      "id":"admin3@admin.com",
-      "email":3,
-      "addressId":3
+      "id": "admin3@admin.com",
+      "email": 3,
+      "addressId": 3
     }
   ],
-  "address":[
+  "address": [
     {
-      "id":1,
-      "addres":"my addres 1"
+      "id": 1,
+      "addres": "my addres 1"
     },
     {
-      "id":2,
-      "addres":"my addres 2"
+      "id": 2,
+      "addres": "my addres 2"
     },
     {
-      "id":3,
-      "addres":"my addres 3"
+      "id": 3,
+      "addres": "my addres 3"
     }
   ],
-  "colors":[
-  { "id": 1, "label": "red" },
-  { "id": 2, "label": "blue" },
-  { "id": 3, "label": "green" },
-  { "id": 4, "label": "yellow" },
-  { "id": 5, "label": "orange" },
-  { "id": 6, "label": "purple" },
-  { "id": 7, "label": "pink" },
-  { "id": 8, "label": "brown" },
-  { "id": 9, "label": "gray" },
-  { "id": 10, "label": "white" },
-  { "id": 11, "label": "black" },
-  { "id": 12, "label": "cyan" },
-  { "id": 13, "label": "magenta" },
-  { "id": 14, "label": "turquoise" },
-  { "id": 15, "label": "olive" },
-  { "id": 16, "label": "lavender" },
-  { "id": 17, "label": "maroon" },
-  { "id": 18, "label": "gold" },
-  { "id": 19, "label": "silver" },
-  { "id": 20, "label": "teal" }
-]
-
+  "colors": [
+    {
+      "id": 1,
+      "label": "red"
+    },
+    {
+      "id": 2,
+      "label": "blue"
+    },
+    {
+      "id": 3,
+      "label": "green"
+    },
+    {
+      "id": 4,
+      "label": "yellow"
+    },
+    {
+      "id": 5,
+      "label": "orange"
+    },
+    {
+      "id": 6,
+      "label": "purple"
+    },
+    {
+      "id": 7,
+      "label": "pink"
+    },
+    {
+      "id": 8,
+      "label": "brown"
+    },
+    {
+      "id": 9,
+      "label": "gray"
+    },
+    {
+      "id": 10,
+      "label": "white"
+    },
+    {
+      "id": 11,
+      "label": "black"
+    },
+    {
+      "id": 12,
+      "label": "cyan"
+    },
+    {
+      "id": 13,
+      "label": "magenta"
+    },
+    {
+      "id": 14,
+      "label": "turquoise"
+    },
+    {
+      "id": 15,
+      "label": "olive"
+    },
+    {
+      "id": 16,
+      "label": "lavender"
+    },
+    {
+      "id": 17,
+      "label": "maroon"
+    },
+    {
+      "id": 18,
+      "label": "gold"
+    },
+    {
+      "id": 19,
+      "label": "silver"
+    },
+    {
+      "id": 20,
+      "label": "teal"
+    }
+  ]
 }
- 

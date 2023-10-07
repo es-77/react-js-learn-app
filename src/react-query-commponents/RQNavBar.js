@@ -18,6 +18,7 @@ function RQNavBar() {
                 <Link to='/qr-dynamic-query'> | Dynamic Query</Link>
                 <Link to='/qr-depend-query'> | Depend Query</Link>
                 <Link to='/qr-paginated-query'> | Paginated Query</Link>
+                <Link to='/qr-submit-query'> | Submit Query</Link>
             </p>
         </div>
     )

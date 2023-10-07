@@ -46,6 +46,7 @@ import ParallelQueries from './react-query-commponents/ParallelQueries';
 import DynamicQuery from './react-query-commponents/DynamicQuery';
 import DependQuery from './react-query-commponents/DependQuery';
 import PaginatedQuery from './react-query-commponents/PaginatedQuery';
+import DataSubmit from './react-query-commponents/DataSubmit';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -109,6 +110,7 @@ function App() {
           <Route path='/qr-dynamic-query' element={<DynamicQuery herorIds={[1, 2]} />} />
           <Route path='/qr-depend-query' element={<DependQuery userEmail='admin@admin.com' />} />
           <Route path='/qr-paginated-query' element={<PaginatedQuery />} />
+          <Route path='/qr-submit-query' element={<DataSubmit />} />
         </Routes>
         <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
       </QueryClientProvider>
