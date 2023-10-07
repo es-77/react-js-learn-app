@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSuperHeroDataFetch } from './hooks/useSuperHeroDataFetch'
-
+import { Link } from 'react-router-dom'
 function CustomHookCall() {
     const onSuccess = () => {
         console.log('data fetch');
@@ -17,9 +17,10 @@ function CustomHookCall() {
     }
     return (
         <div>CustomHookCall
+            also use send id
             <br />
             {data?.data?.map((hero) => {
-                return <p key={hero?.id}>{hero?.name}</p>
+                return <Link to={`/qr-query-by-id/${hero?.id}`}><p key={hero?.id}>{hero?.name}</p></Link>
             })}
         </div>
     )

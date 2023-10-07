@@ -41,6 +41,7 @@ import RQFetchDataOnButtonClick from './react-query-commponents/RQFetchDataOnBut
 import SuccessErrorFallBack from './react-query-commponents/SuccessErrorFallBack';
 import RQDataTransform from './react-query-commponents/RQDataTransform';
 import CustomHookCall from './react-query-commponents/CustomHookCall';
+import SingleSuperHero from './react-query-commponents/SingleSuperHero';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -99,6 +100,7 @@ function App() {
           <Route path='/qr-success-error-fall-back' element={<SuccessErrorFallBack />} />
           <Route path='/qr-data-transform' element={<RQDataTransform />} />
           <Route path='/qr-custom-hook' element={<CustomHookCall />} />
+          <Route path='/qr-query-by-id/:id' element={<SingleSuperHero />} />
         </Routes>
         <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
       </QueryClientProvider>
