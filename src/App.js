@@ -38,6 +38,7 @@ import { QueryClientProvider, QueryClient } from "react-query"
 import { ReactQueryDevtools } from "react-query/devtools"
 import RQPolling from './react-query-commponents/RQPolling';
 import RQFetchDataOnButtonClick from './react-query-commponents/RQFetchDataOnButtonClick';
+import SuccessErrorFallBack from './react-query-commponents/SuccessErrorFallBack';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -93,6 +94,7 @@ function App() {
           <Route path='/qr-load-data-react-query' element={<RQGetData />} />
           <Route path='/qr-poling' element={<RQPolling />} />
           <Route path='/qr-get-data-on-button-click' element={<RQFetchDataOnButtonClick />} />
+          <Route path='/qr-success-error-fall-back' element={<SuccessErrorFallBack />} />
         </Routes>
         <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
       </QueryClientProvider>
