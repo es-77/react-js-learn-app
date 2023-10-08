@@ -58,6 +58,7 @@ import ReducingFormikCode from './fromik_components/ReducingFormikCode';
 import FormikComponent from './fromik_components/FormikComponent';
 import NestedObjects from './fromik_components/NestedObjects';
 import FieldArrayComponent from './fromik_components/FieldArrayComponent';
+import FieldLevelVaildation from './fromik_components/FieldLevelVaildation';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -138,6 +139,7 @@ function App() {
         <Route path='/use-formik-formik-component' element={<FormikComponent />} />
         <Route path='/use-formik-nested-object' element={<NestedObjects />} />
         <Route path='/use-formik-array-field' element={<FieldArrayComponent />} />
+        <Route path='/use-formik-field-level-validation' element={<FieldLevelVaildation />} />
       </Routes>
     </div>
   );
