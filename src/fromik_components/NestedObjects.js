@@ -22,7 +22,8 @@ function NestedObjects() {
             linkedin: '',
             twitter: '',
             gitHub: ''
-        }
+        },
+        phoneNumbers: ['', '']
     }
 
     return (
@@ -101,6 +102,25 @@ function NestedObjects() {
                                 id="social.gitHub"
                             />
                             <ErrorMessage name="social.gitHub" />
+                        </div>
+                        <br />
+                        <div className="form-control">
+                            <label htmlFor="phoneNumbers[0]">phoneNumbers one:</label>
+                            <Field
+                                type="text"
+                                name='phoneNumbers[0]'
+                            />
+                            <ErrorMessage name="phoneNumbers[0]" />
+                        </div>
+                        <br />
+                        <div className="form-control">
+                            <label htmlFor="phoneNumbers">phoneNumbers two:</label>
+                            <Field
+                                type="text"
+                                name='phoneNumbers[1]'
+                                id="phoneNumbers"
+                            />
+                            <ErrorMessage name="phoneNumbers" />
                         </div>
                         <br />
 
