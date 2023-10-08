@@ -9,20 +9,17 @@ function ReducingFormikCode() {
         channel: Yup.string('Enter valid channel name').required('Channel is required')
     });
 
-    const onSubmit = values => {
-        console.log('Form values submitted:', values);
-    }
-    const initialValues = {
-        name: '',
-        email: '',
-        channel: ''
-    }
-
 
     const formik = useFormik({
-        initialValues,
+        initialValues: {
+            name: '',
+            email: '',
+            channel: ''
+        },
         validationSchema: ProductSchema,
-        onSubmit,
+        onSubmit: values => {
+            console.log('Form values submitted:', values);
+        },
     });
 
     console.log('>>>>>>>>>>>>>>>>>>', formik.errors);
