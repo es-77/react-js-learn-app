@@ -12,6 +12,7 @@ function MainBar() {
             <Link to='/use-formik-reducing-code'> | Formik Reducing Code </Link>
             <Link to='/use-formik-formik-component'> | Formik Component </Link>
             <Link to='/use-formik-nested-object'> | Formik Nested Object </Link>
+            <Link to='/use-formik-array-field'> | Formik Array Field </Link>
         </div>
     )
 }
