@@ -47,6 +47,12 @@ import DynamicQuery from './react-query-commponents/DynamicQuery';
 import DependQuery from './react-query-commponents/DependQuery';
 import PaginatedQuery from './react-query-commponents/PaginatedQuery';
 import DataSubmit from './react-query-commponents/DataSubmit';
+import MainBar from './fromik_components/MainBar';
+import SimpleForm from './fromik_components/SimpleForm';
+import FormikUseHook from './fromik_components/FormikUseHook';
+import FormikInitialValue from './fromik_components/FormikInitialValuePage';
+import FormikInitialValuePage from './fromik_components/FormikInitialValuePage';
+import ErrorMessage from './fromik_components/ErrorMessage';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -93,7 +99,7 @@ function App() {
       {/* <PropsRender/> */}
 
       {/* react query  */}
-      <RQNavBar />
+      {/* <RQNavBar />
       <QueryClientProvider client={queryClient}>
         <Routes>
           <Route path='/qr-home' element={<ReactQueryHome />} />
@@ -113,7 +119,16 @@ function App() {
           <Route path='/qr-submit-query' element={<DataSubmit />} />
         </Routes>
         <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
-      </QueryClientProvider>
+      </QueryClientProvider> */}
+
+      {/* formik start code */}
+      <MainBar />
+      <Routes>
+        <Route path='/simple-form' element={<SimpleForm />} />
+        <Route path='/use-formik' element={<FormikUseHook />} />
+        <Route path='/use-formik-initial-value' element={<FormikInitialValuePage />} />
+        <Route path='/use-formik-error' element={<ErrorMessage />} />
+      </Routes>
     </div>
   );
 }
