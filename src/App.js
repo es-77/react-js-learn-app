@@ -53,6 +53,9 @@ import FormikUseHook from './fromik_components/FormikUseHook';
 import FormikInitialValue from './fromik_components/FormikInitialValuePage';
 import FormikInitialValuePage from './fromik_components/FormikInitialValuePage';
 import ErrorMessage from './fromik_components/ErrorMessage';
+import YupValidationFormikPage from './fromik_components/YupValidationFormikPage';
+import ReducingFormikCode from './fromik_components/ReducingFormikCode';
+import FormikComponent from './fromik_components/FormikComponent';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -128,6 +131,9 @@ function App() {
         <Route path='/use-formik' element={<FormikUseHook />} />
         <Route path='/use-formik-initial-value' element={<FormikInitialValuePage />} />
         <Route path='/use-formik-error' element={<ErrorMessage />} />
+        <Route path='/use-formik-yup-error' element={<YupValidationFormikPage />} />
+        <Route path='/use-formik-reducing-code' element={<ReducingFormikCode />} />
+        <Route path='/use-formik-formik-component' element={<FormikComponent />} />
       </Routes>
     </div>
   );
