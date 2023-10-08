@@ -59,6 +59,7 @@ import FormikComponent from './fromik_components/FormikComponent';
 import NestedObjects from './fromik_components/NestedObjects';
 import FieldArrayComponent from './fromik_components/FieldArrayComponent';
 import FieldLevelVaildation from './fromik_components/FieldLevelVaildation';
+import ManuallyTrigeringValidation from './fromik_components/ManuallyTrigeringValidation';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -140,6 +141,7 @@ function App() {
         <Route path='/use-formik-nested-object' element={<NestedObjects />} />
         <Route path='/use-formik-array-field' element={<FieldArrayComponent />} />
         <Route path='/use-formik-field-level-validation' element={<FieldLevelVaildation />} />
+        <Route path='/use-formik-manually-trigering-validation' element={<ManuallyTrigeringValidation />} />
       </Routes>
     </div>
   );
