@@ -4,9 +4,9 @@ import React from 'react'
 function ErrorMessage() {
     const formik = useFormik({
         initialValues: {
-            name: 'test',
-            email: 'test',
-            channel: 'ste'
+            name: '',
+            email: '',
+            channel: ''
         },
         validate: values => {
             let errors = {}
@@ -39,10 +39,11 @@ function ErrorMessage() {
                         type="text"
                         id="name"
                         name="name"
-                        value={formik.values.name}
-                        onChange={formik.handleChange}
+                        value={formik.values.name} // get the formik value
+                        onChange={formik.handleChange} // on change  function call
+                        onBlur={formik.handleBlur} // on vist check the field is require
                     />
-                    {formik.errors.name ? <p>{formik.errors.name}</p> : null}
+                    {formik.errors.name && formik.touched.name ? <p>{formik.errors.name}</p> : null}
                 </div>
                 <br />
                 <div className="form-control">
@@ -53,8 +54,9 @@ function ErrorMessage() {
                         name="email"
                         value={formik.values.email}
                         onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
                     />
-                    {formik.errors.email ? <p>{formik.errors.email}</p> : null}
+                    {formik.errors.email && formik.touched.email ? <p>{formik.errors.email}</p> : null}
                 </div>
                 <br />
                 <div className="form-control">
@@ -65,8 +67,9 @@ function ErrorMessage() {
                         name="channel"
                         value={formik.values.channel}
                         onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
                     />
-                    {formik.errors.channel ? <p>{formik.errors.channel}</p> : null}
+                    {formik.errors.channel && formik.touched.channel ? <p>{formik.errors.channel}</p> : null}
                 </div>
                 <br />
 
