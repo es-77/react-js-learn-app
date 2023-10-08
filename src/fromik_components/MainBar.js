@@ -11,6 +11,7 @@ function MainBar() {
             <Link to='/use-formik-yup-error'> | Formik yup Error </Link>
             <Link to='/use-formik-reducing-code'> | Formik Reducing Code </Link>
             <Link to='/use-formik-formik-component'> | Formik Component </Link>
+            <Link to='/use-formik-nested-object'> | Formik Nested Object </Link>
         </div>
     )
 }
