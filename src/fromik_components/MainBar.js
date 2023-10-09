@@ -15,6 +15,7 @@ function MainBar() {
             <Link to='/use-formik-array-field'> | Formik Array Field </Link>
             <Link to='/use-formik-field-level-validation'> | Formik Field Level Validation </Link>
             <Link to='/use-formik-manually-trigering-validation'> | Formik Manually Trigering Validation </Link>
+            <Link to='/use-formik-disable-submit'> | Formik Disable Submit </Link>
         </div>
     )
 }
