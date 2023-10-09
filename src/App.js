@@ -62,6 +62,7 @@ import FieldLevelVaildation from './fromik_components/FieldLevelVaildation';
 import ManuallyTrigeringValidation from './fromik_components/ManuallyTrigeringValidation';
 import DisablingSubmit from './fromik_components/DisablingSubmit';
 import LoadSavedDataOnButton from './fromik_components/LoadSavedDataOnButton';
+import CallReusableFormikComponent from './fromik_components/CallReusableFormikComponent';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -146,6 +147,7 @@ function App() {
         <Route path='/use-formik-manually-trigering-validation' element={<ManuallyTrigeringValidation />} />
         <Route path='/use-formik-disable-submit' element={<DisablingSubmit />} />
         <Route path='/use-formik-load-save-data-on-button' element={<LoadSavedDataOnButton />} />
+        <Route path='/call-formik-reusable-component' element={<CallReusableFormikComponent />} />
       </Routes>
     </div>
   );

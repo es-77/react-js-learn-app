@@ -17,6 +17,7 @@ function MainBar() {
             <Link to='/use-formik-manually-trigering-validation'> | Formik Manually Trigering Validation </Link>
             <Link to='/use-formik-disable-submit'> | Formik Disable Submit </Link>
             <Link to='/use-formik-load-save-data-on-button'> | Load Saved Data On Button </Link>
+            <Link to='/call-formik-reusable-component'> | Call Formik Reusable Component </Link>
         </div>
     )
 }
