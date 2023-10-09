@@ -68,6 +68,8 @@ import JsonSideBar from './json_server_components/JsonSideBar';
 import SortRequest from './json_server_components/SortRequest';
 import PaginationRequest from './json_server_components/PaginationRequest';
 import OperatorsRequest from './json_server_components/OperatorsRequest';
+import LikeOperator from './json_server_components/LikeOperator';
+import NotEqualRequest from './json_server_components/NotEqualRequest';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -163,6 +165,8 @@ function App() {
           <Route path='/get-sort-data' element={<SortRequest />} />
           <Route path='/get-pagination-data' element={<PaginationRequest />} />
           <Route path='/get-opertor-data' element={<OperatorsRequest />} />
+          <Route path='/get-not-equal-data' element={<NotEqualRequest />} />
+          <Route path='/get-like-operator-data' element={<LikeOperator />} />
         </Routes>
       </QueryClientProvider>
     </div>
