@@ -4,7 +4,6 @@ import TextError from './TextError'
 
 function InputComponent(props) {
     const { name, id, type, lable } = props
-    console.log(name, id, type, lable)
     return (
         <div>
             <lable htmlFor={name}>{lable}</lable>

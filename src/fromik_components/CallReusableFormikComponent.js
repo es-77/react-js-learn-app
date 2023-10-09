@@ -62,6 +62,52 @@ function CallReusableFormikComponent() {
                     value: "ind"
                 }
             ]
+        },
+        {
+            control: "radio",
+            name: 'select_gender',
+            id: 'select_gender',
+            lable: "Select Gender",
+            options: [
+                {
+                    id: 'male',
+                    lable: 'Male',
+                    value: "male"
+                },
+                {
+                    id: 'female',
+                    lable: 'Female',
+                    value: "female"
+                },
+                {
+                    id: 'other',
+                    lable: 'Other',
+                    value: "other"
+                }
+            ]
+        },
+        {
+            control: "checkbox",
+            name: 'course',
+            id: 'course',
+            lable: "Check Course",
+            options: [
+                {
+                    id: 'eng',
+                    lable: 'English',
+                    value: "eng"
+                },
+                {
+                    id: 'urd',
+                    lable: 'Urdu',
+                    value: "urd"
+                },
+                {
+                    id: 'math',
+                    lable: 'Math',
+                    value: "math"
+                }
+            ]
         }
     ];
     const buttonData = [
