@@ -12,6 +12,10 @@ function JsonSideBar() {
             <Link to="/get-like-operator-data"> | Get Like Operator Data</Link>
             <Link to="/get-full-text-search"> | Get Full Text Search</Link>
             <Link to="/get-relationship-data"> | Get Relationship Data</Link>
+            <Link to="/get-post-request"> | Post Request</Link>
+            <Link to="/get-update-request"> | Update Request</Link>
+            <Link to="/get-patch-request"> | Patch Request</Link>
+            <Link to="/get-delete-request"> | Delete Request</Link>
         </div>
     )
 }

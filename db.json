@@ -197,13 +197,6 @@
   ],
   "products": [
     {
-      "id": 1,
-      "name": "iPhone",
-      "price": 1,
-      "category": "Electronics",
-      "description": "Popular smartphone by Apple."
-    },
-    {
       "id": 2,
       "name": "Samsung Galaxy S21",
       "price": 2,
@@ -335,15 +328,23 @@
       "price": 20,
       "category": "Electronics",
       "description": "Versatile gaming console by Nintendo."
+    },
+    {
+      "id": "21",
+      "name": "Ifeoma Calhoun",
+      "price": "735",
+      "category": "Pariatur Sed atque ",
+      "description": "Deserunt est eum quo"
+    },
+    {
+      "name": "Colt Downs",
+      "price": "811",
+      "category": "Cum aliqua Dolorem ",
+      "description": "Id officia quo nesc",
+      "id": "Quisquam alias volup"
     }
   ],
   "reviews": [
-    {
-      "id": 1,
-      "rating": 5,
-      "comment": "I love the iPhone!",
-      "productId": 1
-    },
     {
       "id": 2,
       "rating": 4,
@@ -454,11 +455,6 @@
     }
   ],
   "productDetails": [
-    {
-      "id": 1,
-      "detail": "Very useful and powerful smartphone.",
-      "productId": 1
-    },
     {
       "id": 2,
       "detail": "High-performance Android smartphone with excellent features.",

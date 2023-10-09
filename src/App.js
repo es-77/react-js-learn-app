@@ -72,6 +72,10 @@ import LikeOperator from './json_server_components/LikeOperator';
 import NotEqualRequest from './json_server_components/NotEqualRequest';
 import FullTextSearch from './json_server_components/FullTextSearch';
 import RelationshipsData from './json_server_components/RelationshipsData';
+import POSTRequest from './json_server_components/POSTRequest';
+import UpdateRequest from './json_server_components/UpdateRequest';
+import PATCHRequest from './json_server_components/PATCHRequest';
+import DELETERequest from './json_server_components/DELETERequest';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -171,6 +175,10 @@ function App() {
           <Route path='/get-like-operator-data' element={<LikeOperator />} />
           <Route path='/get-full-text-search' element={<FullTextSearch />} />
           <Route path='/get-relationship-data' element={<RelationshipsData />} />
+          <Route path='/get-post-request' element={<POSTRequest />} />
+          <Route path='/get-update-request' element={<UpdateRequest />} />
+          <Route path='/get-patch-request' element={<PATCHRequest />} />
+          <Route path='/get-delete-request' element={<DELETERequest />} />
         </Routes>
       </QueryClientProvider>
     </div>
