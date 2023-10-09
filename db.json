@@ -336,5 +336,218 @@
       "category": "Electronics",
       "description": "Versatile gaming console by Nintendo."
     }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "rating": 5,
+      "comment": "I love the iPhone!",
+      "productId": 1
+    },
+    {
+      "id": 2,
+      "rating": 4,
+      "comment": "Great features on the Samsung Galaxy S21.",
+      "productId": 2
+    },
+    {
+      "id": 3,
+      "rating": 3,
+      "comment": "Decent camera on the Sony PlayStation 5.",
+      "productId": 3
+    },
+    {
+      "id": 4,
+      "rating": 4,
+      "comment": "MacBook Pro is fast and efficient.",
+      "productId": 4
+    },
+    {
+      "id": 5,
+      "rating": 5,
+      "comment": "Comfortable Nike Air Max shoes.",
+      "productId": 6
+    },
+    {
+      "id": 6,
+      "rating": 4,
+      "comment": "Amazing photos with the Canon EOS R5.",
+      "productId": 7
+    },
+    {
+      "id": 7,
+      "rating": 5,
+      "comment": "Stunning visuals on the Samsung 55-inch 4K TV.",
+      "productId": 8
+    },
+    {
+      "id": 8,
+      "rating": 5,
+      "comment": "Love my Amazon Echo Dot!",
+      "productId": 9
+    },
+    {
+      "id": 9,
+      "rating": 4,
+      "comment": "Fitbit Versa 3 helps me stay active.",
+      "productId": 10
+    },
+    {
+      "id": 10,
+      "rating": 4,
+      "comment": "Classic design on the Adidas Superstar sneakers.",
+      "productId": 11
+    },
+    {
+      "id": 11,
+      "rating": 5,
+      "comment": "Kindle Paperwhite is perfect for reading.",
+      "productId": 12
+    },
+    {
+      "id": 12,
+      "rating": 4,
+      "comment": "Bose QuietComfort 35 II has excellent noise-canceling.",
+      "productId": 13
+    },
+    {
+      "id": 13,
+      "rating": 5,
+      "comment": "Instant Pot Duo is a game-changer in the kitchen!",
+      "productId": 14
+    },
+    {
+      "id": 14,
+      "rating": 5,
+      "comment": "LEGO Creator Expert Roller Coaster is so much fun to build!",
+      "productId": 15
+    },
+    {
+      "id": 15,
+      "rating": 4,
+      "comment": "Captured amazing adventures with GoPro HERO9 Black.",
+      "productId": 16
+    },
+    {
+      "id": 16,
+      "rating": 5,
+      "comment": "Fujifilm Instax Mini 11 makes memories tangible!",
+      "productId": 17
+    },
+    {
+      "id": 17,
+      "rating": 4,
+      "comment": "Microsoft Surface Laptop 4 is sleek and powerful.",
+      "productId": 18
+    },
+    {
+      "id": 18,
+      "rating": 5,
+      "comment": "Roomba i7+ keeps my home clean!",
+      "productId": 19
+    },
+    {
+      "id": 19,
+      "rating": 5,
+      "comment": "Nintendo Switch offers a wide range of games.",
+      "productId": 20
+    }
+  ],
+  "productDetails": [
+    {
+      "id": 1,
+      "detail": "Very useful and powerful smartphone.",
+      "productId": 1
+    },
+    {
+      "id": 2,
+      "detail": "High-performance Android smartphone with excellent features.",
+      "productId": 2
+    },
+    {
+      "id": 3,
+      "detail": "State-of-the-art gaming console for immersive gaming experiences.",
+      "productId": 3
+    },
+    {
+      "id": 4,
+      "detail": "Premium laptop for professionals and creatives.",
+      "productId": 4
+    },
+    {
+      "id": 5,
+      "detail": "Iconic and comfortable sports shoes for athletic performance.",
+      "productId": 6
+    },
+    {
+      "id": 6,
+      "detail": "Advanced mirrorless camera for photography enthusiasts.",
+      "productId": 7
+    },
+    {
+      "id": 7,
+      "detail": "Experience stunning visuals with this 4K smart TV.",
+      "productId": 8
+    },
+    {
+      "id": 8,
+      "detail": "Smart speaker with voice control and music streaming capabilities.",
+      "productId": 9
+    },
+    {
+      "id": 9,
+      "detail": "Fitness smartwatch to track your workouts and health metrics.",
+      "productId": 10
+    },
+    {
+      "id": 10,
+      "detail": "Classic design sneakers suitable for everyday wear.",
+      "productId": 11
+    },
+    {
+      "id": 11,
+      "detail": "E-reader with a high-resolution display for comfortable reading.",
+      "productId": 12
+    },
+    {
+      "id": 12,
+      "detail": "Premium noise-canceling headphones for an immersive audio experience.",
+      "productId": 13
+    },
+    {
+      "id": 13,
+      "detail": "Multi-functional electric pressure cooker for quick and easy meals.",
+      "productId": 14
+    },
+    {
+      "id": 14,
+      "detail": "Buildable roller coaster set for creative play and display.",
+      "productId": 15
+    },
+    {
+      "id": 15,
+      "detail": "Capture amazing adventures and moments with this action camera.",
+      "productId": 16
+    },
+    {
+      "id": 16,
+      "detail": "Fun instant camera to capture and share memories instantly.",
+      "productId": 17
+    },
+    {
+      "id": 17,
+      "detail": "Sleek and powerful laptop for productivity and creativity.",
+      "productId": 18
+    },
+    {
+      "id": 18,
+      "detail": "Advanced robot vacuum for automated home cleaning.",
+      "productId": 19
+    },
+    {
+      "id": 19,
+      "detail": "Versatile gaming console for gaming on the go.",
+      "productId": 20
+    }
   ]
 }
