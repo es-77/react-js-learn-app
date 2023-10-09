@@ -33,6 +33,35 @@ function CallReusableFormikComponent() {
             id: 'email',
             type: "email",
             lable: "Enter your Email"
+        },
+        {
+            control: "textarea",
+            name: 'textarea',
+            id: 'textarea',
+            lable: "textarea enter "
+        },
+        {
+            control: "select",
+            name: 'select_country',
+            id: 'select_country',
+            lable: "Select Your country",
+            options: [
+                {
+                    id: 'usa',
+                    lable: 'USA',
+                    value: "usa"
+                },
+                {
+                    id: 'pk',
+                    lable: 'PK',
+                    value: "pk"
+                },
+                {
+                    id: 'ind',
+                    lable: 'Indain',
+                    value: "ind"
+                }
+            ]
         }
     ];
     const buttonData = [

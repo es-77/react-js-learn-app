@@ -12,7 +12,7 @@ function FormikContainer({ initialValues, validationSchema, formFields, buttonDa
             {formik => (
                 <Form>
                     {formFields?.map((form) => {
-                        return < FormikControllComponents control={form.control} name={form.name} id={form.id} type={form.type} lable={form.lable} />
+                        return < FormikControllComponents control={form?.control} name={form?.name} id={form?.id} type={form?.type} lable={form?.lable} options={form?.options} />
                     })}
                     {buttonData?.map((button) => {
                         return <ButtonComponent button={button} />
