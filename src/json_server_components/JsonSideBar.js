@@ -7,6 +7,7 @@ function JsonSideBar() {
             <Link to="/get-data"> Get Request</Link>
             <Link to="/get-sort-data"> | Get Sort Data</Link>
             <Link to="/get-pagination-data"> | Get Pagination Data</Link>
+            <Link to="/get-opertor-data"> | Get Opertor Data</Link>
         </div>
     )
 }
