@@ -10,6 +10,7 @@ function LoadSavedDataOnButton() {
     const onSubmit = (values, onSumbiteProps) => {
         console.log('Form values submitted:', values, onSumbiteProps);
         onSumbiteProps.setSubmitting(false);
+        onSumbiteProps.resetForm();
     }
 
     const initialValues = {
@@ -68,6 +69,7 @@ function LoadSavedDataOnButton() {
                         <br />
                         <button type="submit" disabled={!(formik.isValid) || formik.isSubmitting}>Save Data</button>
                         <button onClick={() => setSaveFormValue(savedValues)}>Load data</button>
+                        <button type='reset'>Reset Form data</button>
                     </Form>
                 )}
             </Formik>
