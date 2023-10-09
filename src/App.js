@@ -66,6 +66,7 @@ import CallReusableFormikComponent from './fromik_components/CallReusableFormikC
 import GetRequest from './json_server_components/GetRequest';
 import JsonSideBar from './json_server_components/JsonSideBar';
 import SortRequest from './json_server_components/SortRequest';
+import PaginationRequest from './json_server_components/PaginationRequest';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -159,6 +160,7 @@ function App() {
         <Routes>
           <Route path='/get-data' element={<GetRequest />} />
           <Route path='/get-sort-data' element={<SortRequest />} />
+          <Route path='/get-pagination-data' element={<PaginationRequest />} />
         </Routes>
       </QueryClientProvider>
     </div>
