@@ -194,5 +194,147 @@
       "id": 20,
       "label": "teal"
     }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone",
+      "price": 1,
+      "category": "Electronics",
+      "description": "Popular smartphone by Apple."
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S21",
+      "price": 2,
+      "category": "Electronics",
+      "description": "Top Android smartphone by Samsung."
+    },
+    {
+      "id": 3,
+      "name": "Sony PlayStation 5",
+      "price": 3,
+      "category": "Electronics",
+      "description": "Next-gen gaming console by Sony."
+    },
+    {
+      "id": 4,
+      "name": "MacBook Pro",
+      "price": 4,
+      "category": "Electronics",
+      "description": "Powerful laptop by Apple."
+    },
+    {
+      "id": 5,
+      "name": "Dell XPS 13",
+      "price": 5,
+      "category": "Electronics",
+      "description": "Popular laptop by Dell."
+    },
+    {
+      "id": 6,
+      "name": "Nike Air Max",
+      "price": 6,
+      "category": "Fashion",
+      "description": "Iconic sports shoes by Nike."
+    },
+    {
+      "id": 7,
+      "name": "Canon EOS R5",
+      "price": 7,
+      "category": "Electronics",
+      "description": "High-end mirrorless camera by Canon."
+    },
+    {
+      "id": 8,
+      "name": "Samsung 55-inch 4K TV",
+      "price": 8,
+      "category": "Electronics",
+      "description": "High-quality smart TV by Samsung."
+    },
+    {
+      "id": 9,
+      "name": "Amazon Echo Dot",
+      "price": 9,
+      "category": "Electronics",
+      "description": "Smart speaker with Alexa by Amazon."
+    },
+    {
+      "id": 10,
+      "name": "Fitbit Versa 3",
+      "price": 10,
+      "category": "Electronics",
+      "description": "Fitness smartwatch by Fitbit."
+    },
+    {
+      "id": 11,
+      "name": "Adidas Superstar",
+      "price": 11,
+      "category": "Fashion",
+      "description": "Classic sneakers by Adidas."
+    },
+    {
+      "id": 12,
+      "name": "Kindle Paperwhite",
+      "price": 12,
+      "category": "Electronics",
+      "description": "E-reader by Amazon for book lovers."
+    },
+    {
+      "id": 13,
+      "name": "Bose QuietComfort 35 II",
+      "price": 13,
+      "category": "Electronics",
+      "description": "Premium noise-canceling headphones by Bose."
+    },
+    {
+      "id": 14,
+      "name": "Instant Pot Duo",
+      "price": 14,
+      "category": "Kitchen",
+      "description": "Multi-functional electric pressure cooker."
+    },
+    {
+      "id": 15,
+      "name": "LEGO Creator Expert Roller Coaster",
+      "price": 15,
+      "category": "Toys",
+      "description": "Buildable roller coaster set for LEGO enthusiasts."
+    },
+    {
+      "id": 16,
+      "name": "GoPro HERO9 Black",
+      "price": 16,
+      "category": "Electronics",
+      "description": "High-quality action camera by GoPro."
+    },
+    {
+      "id": 17,
+      "name": "Fujifilm Instax Mini 11",
+      "price": 17,
+      "category": "Electronics",
+      "description": "Fun instant camera by Fujifilm."
+    },
+    {
+      "id": 18,
+      "name": "Microsoft Surface Laptop 4",
+      "price": 18,
+      "category": "Electronics",
+      "description": "Sleek and powerful laptop by Microsoft."
+    },
+    {
+      "id": 19,
+      "name": "Roomba i7+",
+      "price": 19,
+      "category": "Home",
+      "description": "Advanced robot vacuum by iRobot."
+    },
+    {
+      "id": 20,
+      "name": "Nintendo Switch",
+      "price": 20,
+      "category": "Electronics",
+      "description": "Versatile gaming console by Nintendo."
+    }
   ]
 }

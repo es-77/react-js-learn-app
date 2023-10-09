@@ -63,6 +63,9 @@ import ManuallyTrigeringValidation from './fromik_components/ManuallyTrigeringVa
 import DisablingSubmit from './fromik_components/DisablingSubmit';
 import LoadSavedDataOnButton from './fromik_components/LoadSavedDataOnButton';
 import CallReusableFormikComponent from './fromik_components/CallReusableFormikComponent';
+import GetRequest from './json_server_components/GetRequest';
+import JsonSideBar from './json_server_components/JsonSideBar';
+import SortRequest from './json_server_components/SortRequest';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -132,7 +135,7 @@ function App() {
       </QueryClientProvider> */}
 
       {/* formik start code */}
-      <MainBar />
+      {/* <MainBar />
       <Routes>
         <Route path='/simple-form' element={<SimpleForm />} />
         <Route path='/use-formik' element={<FormikUseHook />} />
@@ -148,7 +151,16 @@ function App() {
         <Route path='/use-formik-disable-submit' element={<DisablingSubmit />} />
         <Route path='/use-formik-load-save-data-on-button' element={<LoadSavedDataOnButton />} />
         <Route path='/call-formik-reusable-component' element={<CallReusableFormikComponent />} />
-      </Routes>
+      </Routes> */}
+
+      {/* json server */}
+      <JsonSideBar />
+      <QueryClientProvider client={queryClient}>
+        <Routes>
+          <Route path='/get-data' element={<GetRequest />} />
+          <Route path='/get-sort-data' element={<SortRequest />} />
+        </Routes>
+      </QueryClientProvider>
     </div>
   );
 }
