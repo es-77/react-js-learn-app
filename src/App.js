@@ -76,6 +76,8 @@ import POSTRequest from './json_server_components/POSTRequest';
 import UpdateRequest from './json_server_components/UpdateRequest';
 import PATCHRequest from './json_server_components/PATCHRequest';
 import DELETERequest from './json_server_components/DELETERequest';
+import MainPage from './redux_tool_kit_components/MainPage';
+import ReduxTopBar from './redux_tool_kit_components/ReduxTopBar';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -164,7 +166,7 @@ function App() {
       </Routes> */}
 
       {/* json server */}
-      <JsonSideBar />
+      {/* <JsonSideBar />
       <QueryClientProvider client={queryClient}>
         <Routes>
           <Route path='/get-data' element={<GetRequest />} />
@@ -180,7 +182,10 @@ function App() {
           <Route path='/get-patch-request' element={<PATCHRequest />} />
           <Route path='/get-delete-request' element={<DELETERequest />} />
         </Routes>
-      </QueryClientProvider>
+      </QueryClientProvider> */}
+
+      {/* redux tool kit start here */}
+      <MainPage />
     </div>
   );
 }

@@ -197,6 +197,13 @@
   ],
   "products": [
     {
+      "id": 1,
+      "name": "saleem hello",
+      "price": "729",
+      "category": "Et ducimus quos lab",
+      "description": "Et officiis hic ex r"
+    },
+    {
       "id": 2,
       "name": "Samsung Galaxy S21",
       "price": 2,
@@ -346,6 +353,12 @@
   ],
   "reviews": [
     {
+      "id": 1,
+      "rating": 5,
+      "comment": "I love the iPhone!",
+      "productId": 1
+    },
+    {
       "id": 2,
       "rating": 4,
       "comment": "Great features on the Samsung Galaxy S21.",
@@ -455,6 +468,11 @@
     }
   ],
   "productDetails": [
+    {
+      "id": 1,
+      "detail": "Very useful and powerful smartphone.",
+      "productId": 1
+    },
     {
       "id": 2,
       "detail": "High-performance Android smartphone with excellent features.",
