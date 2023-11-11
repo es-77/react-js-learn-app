@@ -78,6 +78,7 @@ import PATCHRequest from './json_server_components/PATCHRequest';
 import DELETERequest from './json_server_components/DELETERequest';
 import MainPage from './redux_tool_kit_components/MainPage';
 import ReduxTopBar from './redux_tool_kit_components/ReduxTopBar';
+import ChatApp from './pusher_code/ChatApp';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -185,7 +186,10 @@ function App() {
       </QueryClientProvider> */}
 
       {/* redux tool kit start here */}
-      <MainPage />
+      {/* <MainPage /> */}
+
+      {/* pusher and chat */}
+      <ChatApp />
     </div>
   );
 }
