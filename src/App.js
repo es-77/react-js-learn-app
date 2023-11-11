@@ -79,6 +79,7 @@ import DELETERequest from './json_server_components/DELETERequest';
 import MainPage from './redux_tool_kit_components/MainPage';
 import ReduxTopBar from './redux_tool_kit_components/ReduxTopBar';
 import ChatApp from './pusher_code/ChatApp';
+import PushNotification from './firebase_folder/PushNotification';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -189,7 +190,9 @@ function App() {
       {/* <MainPage /> */}
 
       {/* pusher and chat */}
-      <ChatApp />
+      {/* <ChatApp /> */}
+      {/* firebaes push notification */}
+      <PushNotification />
     </div>
   );
 }
