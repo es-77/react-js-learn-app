@@ -80,6 +80,8 @@ import MainPage from './redux_tool_kit_components/MainPage';
 import ReduxTopBar from './redux_tool_kit_components/ReduxTopBar';
 import ChatApp from './pusher_code/ChatApp';
 import PushNotification from './firebase_folder/PushNotification';
+import FormDataExample from './form_covert_into/FormDataExample';
+import AdminForm from './form_covert_into/AdminForm';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -192,7 +194,13 @@ function App() {
       {/* pusher and chat */}
       {/* <ChatApp /> */}
       {/* firebaes push notification */}
-      <PushNotification />
+      {/* <PushNotification /> */}
+
+      {/* <FormDataExample /> */}
+      <QueryClientProvider client={queryClient}>
+        <AdminForm />
+      </QueryClientProvider>
+
     </div>
   );
 }
