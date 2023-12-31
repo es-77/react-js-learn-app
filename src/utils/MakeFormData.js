@@ -86,7 +86,7 @@ export default function MakeFormData(modifingData) {
                 case (isObject(value) && value !== null):
                     objectHandle(fieldName, value);
                     break;
-                case (Array.isArray(value)):
+                case (isArray(value)):
                     arrayHandle(fieldName, value);
                     break;
                 default:

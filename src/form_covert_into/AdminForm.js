@@ -20,6 +20,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { useSaveFormData } from '../form_covert_into_api/FormDataCovertApi';
 import MakeFormData from '../utils/MakeFormData';
 import ConsoleLog from '../utils/ConsoleLog';
+import SingleImage from './SingleImage';
 
 
 export default function AdminForm() {
@@ -28,7 +29,7 @@ export default function AdminForm() {
 
     const formDataQuery = useSaveFormData();
 
-    const fileRef = useRef(null);
+    // const fileRef = useRef(null);
 
     const [showPassword, setShowPassword] = useState(false);
     const handleShowPassword = () => {
@@ -115,7 +116,7 @@ export default function AdminForm() {
     //     }
     // }, [adminQuery.isSuccess, adminQuery.isError]);
 
-    const [preview, setPreview] = useState(user?.photo);
+    // const [preview, setPreview] = useState(user?.photo);
 
     // useEffect(() => {
     //     const image = formik.values.image;
@@ -144,34 +145,34 @@ export default function AdminForm() {
 
 
 
-    const handleChangeIcon = (e) => {
-        if (!e.target.files || e.target.files.length === 0) {
-            return;
-        }
+    // const handleChangeIcon = (e) => {
+    //     if (!e.target.files || e.target.files.length === 0) {
+    //         return;
+    //     }
 
-        const filesArray = Array.from(e.target.files);
+    //     const filesArray = Array.from(e.target.files);
 
-        formik.setFieldValue('image', [...formik.values.image, ...filesArray]);
-    };
+    //     formik.setFieldValue('image', [...formik.values.image, ...filesArray]);
+    // };
 
-    useEffect(() => {
-        const images = formik.values.image;
+    // useEffect(() => {
+    //     const images = formik.values.image;
 
-        if (!images || images.length === 0) {
-            if (!user?.photo) {
-                setPreview(undefined);
-            }
+    //     if (!images || images.length === 0) {
+    //         if (!user?.photo) {
+    //             setPreview(undefined);
+    //         }
 
-            return;
-        }
+    //         return;
+    //     }
 
-        const objectUrls = images.map((image) => URL.createObjectURL(image));
-        setPreview(objectUrls);
+    //     const objectUrls = images.map((image) => URL.createObjectURL(image));
+    //     setPreview(objectUrls);
 
-        return () => {
-            objectUrls.forEach((url) => URL.revokeObjectURL(url));
-        };
-    }, [formik.values.image]);
+    //     return () => {
+    //         objectUrls.forEach((url) => URL.revokeObjectURL(url));
+    //     };
+    // }, [formik.values.image]);
 
 
     const { errors, touched, values, isSubmitting, handleSubmit, getFieldProps, setSubmitting, submitForm } = formik;
@@ -180,7 +181,7 @@ export default function AdminForm() {
         <FormikProvider value={formik}>
             <Form autoComplete="off" encType="multipart/form-data" onSubmit={handleSubmit}>
                 <Grid container spacing={4} my={3} px={7} justifyContent="flex-end">
-                    <Grid container direction="row" justifyContent="center" alignItems="center">
+                    {/* <Grid container direction="row" justifyContent="center" alignItems="center">
                         <Avatar
                             onClick={() => fileRef.current.click()}
                             alt="Users image"
@@ -188,7 +189,9 @@ export default function AdminForm() {
                             sx={{ width: 130, height: 130, cursor: 'pointer' }}
                         />
                     </Grid>
-                    <input ref={fileRef} onChange={handleChangeIcon} multiple={true} type="file" accept="image/*" hidden />
+                    <input ref={fileRef} onChange={handleChangeIcon} multiple={true} type="file" accept="image/*" hidden /> */}
+
+                    <SingleImage formik={formik} image={'https://stage-api.nemtnextgen.com/storage/driver/attachments/GvKWEz5p2znznY8drEW6g90QI0GTcyyUNahtIofe.png'} />
                     <Grid item md={6} xs={12}>
                         <TextField
                             fullWidth
