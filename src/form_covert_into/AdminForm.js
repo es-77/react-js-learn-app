@@ -21,15 +21,19 @@ import { useSaveFormData } from '../form_covert_into_api/FormDataCovertApi';
 import MakeFormData from '../utils/MakeFormData';
 import ConsoleLog from '../utils/ConsoleLog';
 import SingleImage from './SingleImage';
+import DataModifying from '../utils/DataModifying';
+import MulitplyImage from './MulitplyImage';
 
 
 export default function AdminForm() {
     const location = useLocation();
     const user = location.state?.user;
 
-    const formDataQuery = useSaveFormData();
+    const imageStyle = {
+        width: 130, height: 130, cursor: 'pointer'
+    }
 
-    // const fileRef = useRef(null);
+    const formDataQuery = useSaveFormData();
 
     const [showPassword, setShowPassword] = useState(false);
     const handleShowPassword = () => {
@@ -58,6 +62,11 @@ export default function AdminForm() {
             phone: user?.phone || '123',
             address: user?.phone || '123',
             image: '',
+            images: [
+                1,
+                2,
+                3
+            ],
             email: user?.email || '',
             password: '',
             active: user?.active || false,
@@ -84,37 +93,43 @@ export default function AdminForm() {
         },
         validationSchema: ProductSchema,
         onSubmit: (data) => {
+            // const skipKeyArray = ["image", 'admin_id', 'name', 'phone', 'address'];
+            const emptyKeyValueSkip = false;
+            const skipKeyArray = [];
             const modifiedData = { ...data };
             modifiedData.active = modifiedData.active ? 1 : 0;
-            formDataQuery.mutate(MakeFormData(modifiedData));
+            formDataQuery.mutate(MakeFormData(modifiedData, skipKeyArray, emptyKeyValueSkip));
         },
     });
 
-    // useEffect(() => {
-    //     const data = adminQuery?.data;
-    //     if (adminQuery.isSuccess) {
-    //         const message = data?.message;
-    //         const validationErrors = data?.validation_errors;
-    //         const response = data?.response;
-    //         if (response === 101) {
-    //             toast.success(message);
-    //             setTimeout(() => {
-    //                 navigate('/dashboard/admin');
-    //             }, 2000);
-    //         } else {
-    //             Object.keys(validationErrors).forEach((key) => {
-    //                 toast.error(validationErrors[key][0]);
-    //             });
-    //         }
-    //         setSubmitting(false);
-    //     }
+    useEffect(() => {
+        const data = formDataQuery?.data;
+        // alert()
+        console.log('%c data here ', formDataQuery, 'color:red')
+        toast.success('message');
 
-    //     if (adminQuery.isError) {
-    //         setSubmitting(false);
-    //         const message = 'Error occurred while saving the data';
-    //         toast.error(message);
-    //     }
-    // }, [adminQuery.isSuccess, adminQuery.isError]);
+        if (formDataQuery.isSuccess) {
+            const message = data?.message;
+            const validationErrors = data?.validation_errors;
+            const response = data?.response;
+            if (response === 101) {
+                setTimeout(() => {
+                    // navigate('/dashboard/admin');
+                }, 2000);
+            } else {
+                Object.keys(validationErrors).forEach((key) => {
+                    toast.error(validationErrors[key][0]);
+                });
+            }
+            setSubmitting(false);
+        }
+
+        if (formDataQuery.isError) {
+            setSubmitting(false);
+            const message = 'Error occurred while saving the data';
+            toast.error(message);
+        }
+    }, [formDataQuery.isSuccess, formDataQuery.isError]);
 
     // const [preview, setPreview] = useState(user?.photo);
 
@@ -181,17 +196,12 @@ export default function AdminForm() {
         <FormikProvider value={formik}>
             <Form autoComplete="off" encType="multipart/form-data" onSubmit={handleSubmit}>
                 <Grid container spacing={4} my={3} px={7} justifyContent="flex-end">
-                    {/* <Grid container direction="row" justifyContent="center" alignItems="center">
-                        <Avatar
-                            onClick={() => fileRef.current.click()}
-                            alt="Users image"
-                            src={preview}
-                            sx={{ width: 130, height: 130, cursor: 'pointer' }}
-                        />
+                    <Grid item md={12} xs={12}>
+                        <MulitplyImage formik={formik} images={['https://stage-api.nemtnextgen.com/storage/driver/attachments/GvKWEz5p2znznY8drEW6g90QI0GTcyyUNahtIofe.png']} imageStyle={imageStyle} multiple={true} />
                     </Grid>
-                    <input ref={fileRef} onChange={handleChangeIcon} multiple={true} type="file" accept="image/*" hidden /> */}
-
-                    <SingleImage formik={formik} image={'https://stage-api.nemtnextgen.com/storage/driver/attachments/GvKWEz5p2znznY8drEW6g90QI0GTcyyUNahtIofe.png'} />
+                    {/* <Grid item md={12} xs={12}>
+                        <SingleImage formik={formik} image={'https://stage-api.nemtnextgen.com/storage/driver/attachments/GvKWEz5p2znznY8drEW6g90QI0GTcyyUNahtIofe.png'} imageStyle={imageStyle} />
+                    </Grid> */}
                     <Grid item md={6} xs={12}>
                         <TextField
                             fullWidth
