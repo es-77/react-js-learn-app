@@ -1,4 +1,4 @@
-import { Avatar } from '@mui/material';
+import { Avatar, ListItem, Stack } from '@mui/material';
 import React, { useEffect, useRef, useState } from 'react'
 
 function MulitplyImage({ formik, image = [], imageStyle = '', multiple = false }) {
@@ -24,10 +24,6 @@ function MulitplyImage({ formik, image = [], imageStyle = '', multiple = false }
         };
     }, [formik.values.image]);
 
-    // useEffect(() => {
-    //     setPreview(image)
-    // }, [image])
-
 
     const handleChangeIcon = (e) => {
         if (!e.target.files || e.target.files.length === 0) {
@@ -39,15 +35,34 @@ function MulitplyImage({ formik, image = [], imageStyle = '', multiple = false }
         formik.setFieldValue('image', [...formik.values.image, ...filesArray]);
     };
 
+    const handleRemoveFile = (index) => {
+        alert(index)
+        let image = preview?.filter((item, imageIndex) => imageIndex !== index)
+        setPreview(image)
+        let formikImageValues = formik?.values?.image?.filter((item, imageIndex) => imageIndex !== index)
+        console.log('formik.values.image', formikImageValues)
+        formik.setFieldValue('image', formikImageValues);
+        console.log('formik.values.image after', formikImageValues)
+    }
+
+
     return (
         <>
-            <Avatar
-                onClick={() => fileRef.current.click()}
-                alt="Users image"
-                src={preview}
-                sx={imageStyle}
-            />
-            <input ref={fileRef} onChange={handleChangeIcon} multiple={multiple} type="file" accept="image/*" hidden style={{ display: 'none' }} />
+            <Stack space={3}>
+                <ListItem >
+                    {preview?.map((item, index) => {
+                        return (
+                            <Avatar
+                                onClick={() => handleRemoveFile(index)}
+                                alt="Users image"
+                                src={item}
+                                sx={imageStyle}
+                            />
+                        )
+                    })}
+                </ListItem>
+            </Stack>
+            <input ref={fileRef} onChange={handleChangeIcon} multiple={multiple} type="file" accept="image/*" />
         </>
     )
 }
