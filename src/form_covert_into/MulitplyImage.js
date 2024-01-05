@@ -1,23 +1,20 @@
 import { Avatar, ListItem, Stack } from '@mui/material';
 import React, { useEffect, useRef, useState } from 'react'
 
-function MulitplyImage({ formik, image = [], imageStyle = '', multiple = false }) {
+function MultiplyImage({ formik, imageStyle = '', multiple = false }) {
     const fileRef = useRef(null);
-    const [preview, setPreview] = useState(image);
+    const [preview, setPreview] = useState([]);
 
     useEffect(() => {
         const formikImages = formik.values.image;
-        console.log("image", formikImages)
-        if (!formikImages || formikImages === '') {
-            if (!formikImages) {
-                setPreview(undefined);
-            }
 
+        if (!formikImages || formikImages.length === 0) {
+            setPreview([]);
             return;
         }
+
         const objectUrls = formikImages.map((image) => URL.createObjectURL(image));
-        console.log('objectUrls', objectUrls)
-        setPreview(objectUrls);
+        setPreview((prevValue) => [...prevValue, ...objectUrls]);
 
         return () => {
             objectUrls.forEach((url) => URL.revokeObjectURL(url));
@@ -67,4 +64,4 @@ function MulitplyImage({ formik, image = [], imageStyle = '', multiple = false }
     )
 }
 
-export default MulitplyImage
+export default MultiplyImage;
