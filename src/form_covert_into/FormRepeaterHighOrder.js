@@ -14,8 +14,10 @@ const FormRepeaterHighOrder = (WrappedComponent) => {
                     {({ insert, remove, push }) => (
                         <div>
                             {formikValueOfKey?.map((friend, index) => (
+                                <div key={index}>
+                                    <WrappedComponent {...props} remove={remove} index={index} />
+                                </div>
 
-                                <WrappedComponent {...props} remove={remove} index={index} />
                             ))}
                             <button
                                 type="button"
