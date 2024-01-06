@@ -23,6 +23,7 @@ import ConsoleLog from '../utils/ConsoleLog';
 import SingleImage from './SingleImage';
 import DataModifying from '../utils/DataModifying';
 import MulitplyImage from './MulitplyImage';
+import FormRepeater from './FormRepeater';
 
 
 export default function AdminForm() {
@@ -131,65 +132,6 @@ export default function AdminForm() {
         }
     }, [formDataQuery.isSuccess, formDataQuery.isError]);
 
-    // const [preview, setPreview] = useState(user?.photo);
-
-    // useEffect(() => {
-    //     const image = formik.values.image;
-    //     if (!image || image === '') {
-    //         if (!user?.photo) {
-    //             setPreview(undefined);
-    //         }
-
-    //         return;
-    //     }
-
-    //     const objectUrl = URL.createObjectURL(image);
-    //     setPreview(objectUrl);
-    //     return () => URL.revokeObjectURL(objectUrl);
-    // }, [formik.values.image]);
-
-
-    // const handleChangeIcon = (e) => {
-    //     if (!e.target.files || e.target.files.length === 0) {
-    //         return;
-    //     }
-
-    //     const file = e.target.files[0];
-    //     formik.setFieldValue('image', file);
-    // };
-
-
-
-    // const handleChangeIcon = (e) => {
-    //     if (!e.target.files || e.target.files.length === 0) {
-    //         return;
-    //     }
-
-    //     const filesArray = Array.from(e.target.files);
-
-    //     formik.setFieldValue('image', [...formik.values.image, ...filesArray]);
-    // };
-
-    // useEffect(() => {
-    //     const images = formik.values.image;
-
-    //     if (!images || images.length === 0) {
-    //         if (!user?.photo) {
-    //             setPreview(undefined);
-    //         }
-
-    //         return;
-    //     }
-
-    //     const objectUrls = images.map((image) => URL.createObjectURL(image));
-    //     setPreview(objectUrls);
-
-    //     return () => {
-    //         objectUrls.forEach((url) => URL.revokeObjectURL(url));
-    //     };
-    // }, [formik.values.image]);
-
-
     const { errors, touched, values, isSubmitting, handleSubmit, getFieldProps, setSubmitting, submitForm } = formik;
 
     return (
@@ -263,7 +205,7 @@ export default function AdminForm() {
                         ) : null}
                     </Grid>
 
-                    <Grid item md={6} xs={12}>
+                    {/* <Grid item md={6} xs={12}>
                         <FormControlLabel
                             control={
                                 <Switch
@@ -281,6 +223,9 @@ export default function AdminForm() {
                                 {!user?.id ? 'Save Details' : 'Update Details'}
                             </Button>
                         </Box>
+                    </Grid> */}
+                    <Grid item md={12} xs={12}>
+                        <FormRepeater />
                     </Grid>
                 </Grid>
             </Form>

@@ -82,6 +82,7 @@ import ChatApp from './pusher_code/ChatApp';
 import PushNotification from './firebase_folder/PushNotification';
 import FormDataExample from './form_covert_into/FormDataExample';
 import AdminForm from './form_covert_into/AdminForm';
+import FormRepeater from './form_covert_into/FormRepeater';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -197,8 +198,12 @@ function App() {
       {/* <PushNotification /> */}
 
       {/* <FormDataExample /> */}
+
+
+
       <QueryClientProvider client={queryClient}>
-        <AdminForm />
+        {/* <AdminForm /> */}
+        <FormRepeater />
       </QueryClientProvider>
 
     </div>
