@@ -85,6 +85,7 @@ import AdminForm from './form_covert_into/AdminForm';
 import FormRepeater from './form_covert_into/FormRepeater';
 import TableRender from './form_covert_into/TableRender';
 import ModelCode from './form_covert_into/ModelCode';
+import FormikMainComponent from './form_covert_into/FormikMainComponent';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -207,7 +208,8 @@ function App() {
         {/* <AdminForm /> */}
         {/* <FormRepeater /> */}
         {/* <TableRender /> */}
-        <ModelCode />
+        {/* <ModelCode /> */}
+        <FormikMainComponent />
       </QueryClientProvider>
 
     </div>

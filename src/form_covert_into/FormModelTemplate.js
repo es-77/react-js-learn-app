@@ -7,6 +7,7 @@ function FormModelTemplate(props) {
     return (
         <div>
             <Button onClick={() => handleClose()}>close</Button>
+            <Button onClick={() => handleOpen()}>handleOpen</Button>
             <Typography id="modal-modal-title" variant="h6" component="h2">
                 Text in a modal
             </Typography>
