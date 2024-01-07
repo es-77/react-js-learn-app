@@ -563,5 +563,199 @@
       "detail": "Versatile gaming console for gaming on the go.",
       "productId": 20
     }
+  ],
+  "like": [
+    {
+      "id": 1,
+      "detail": "like id 1 product id is 1",
+      "productId": 1
+    },
+    {
+      "id": 2,
+      "detail": "like id 2 product id is 2",
+      "productId": 2
+    },
+    {
+      "id": 3,
+      "detail": "like id 3 product id is 3",
+      "productId": 3
+    },
+    {
+      "id": 4,
+      "detail": "like id 4 product id is 4",
+      "productId": 4
+    },
+    {
+      "id": 5,
+      "detail": "like id 5 product id is 6",
+      "productId": 6
+    },
+    {
+      "id": 6,
+      "detail": "like id 6 product id is 7",
+      "productId": 7
+    },
+    {
+      "id": 7,
+      "detail": "like id 7 product id is 8",
+      "productId": 8
+    },
+    {
+      "id": 8,
+      "detail": "like id 8 product id is 9",
+      "productId": 9
+    },
+    {
+      "id": 9,
+      "detail": "like id 9 product id is 10",
+      "productId": 10
+    },
+    {
+      "id": 10,
+      "detail": "like id 10 product id is 11",
+      "productId": 11
+    },
+    {
+      "id": 11,
+      "detail": "like id 11 product id is 12",
+      "productId": 12
+    },
+    {
+      "id": 12,
+      "detail": "like id 12 product id is 13",
+      "productId": 13
+    },
+    {
+      "id": 13,
+      "detail": "like id 13 product id is 14",
+      "productId": 14
+    },
+    {
+      "id": 14,
+      "detail": "like id 14 product id is 15",
+      "productId": 15
+    },
+    {
+      "id": 15,
+      "detail": "like id 15 product id is 16",
+      "productId": 16
+    },
+    {
+      "id": 16,
+      "detail": "like id 16 product id is 17",
+      "productId": 17
+    },
+    {
+      "id": 17,
+      "detail": "like id 17 product id is 18",
+      "productId": 18
+    },
+    {
+      "id": 18,
+      "detail": "like id 18 product id is 19",
+      "productId": 19
+    },
+    {
+      "id": 19,
+      "detail": "like id 19 product id is 20",
+      "productId": 20
+    }
+  ],
+  "heart": [
+    {
+      "id": 1,
+      "detail": "heart id 1 product id is 1",
+      "productId": 1
+    },
+    {
+      "id": 2,
+      "detail": "heart id 2 product id is 2",
+      "productId": 2
+    },
+    {
+      "id": 3,
+      "detail": "heart id 3 product id is 3",
+      "productId": 3
+    },
+    {
+      "id": 4,
+      "detail": "heart id 4 product id is 4",
+      "productId": 4
+    },
+    {
+      "id": 5,
+      "detail": "heart id 5 product id is 6",
+      "productId": 6
+    },
+    {
+      "id": 6,
+      "detail": "heart id 6 product id is 7",
+      "productId": 7
+    },
+    {
+      "id": 7,
+      "detail": "heart id 7 product id is 8",
+      "productId": 8
+    },
+    {
+      "id": 8,
+      "detail": "heart id 8 product id is 9",
+      "productId": 9
+    },
+    {
+      "id": 9,
+      "detail": "heart id 9 product id is 10",
+      "productId": 10
+    },
+    {
+      "id": 10,
+      "detail": "heart id 10 product id is 11",
+      "productId": 11
+    },
+    {
+      "id": 11,
+      "detail": "heart id 11 product id is 12",
+      "productId": 12
+    },
+    {
+      "id": 12,
+      "detail": "heart id 12 product id is 13",
+      "productId": 13
+    },
+    {
+      "id": 13,
+      "detail": "heart id 13 product id is 14",
+      "productId": 14
+    },
+    {
+      "id": 14,
+      "detail": "heart id 14 product id is 15",
+      "productId": 15
+    },
+    {
+      "id": 15,
+      "detail": "heart id 15 product id is 16",
+      "productId": 16
+    },
+    {
+      "id": 16,
+      "detail": "heart id 16 product id is 17",
+      "productId": 17
+    },
+    {
+      "id": 17,
+      "detail": "heart id 17 product id is 18",
+      "productId": 18
+    },
+    {
+      "id": 18,
+      "detail": "heart id 18 product id is 19",
+      "productId": 19
+    },
+    {
+      "id": 19,
+      "detail": "heart id 19 product id is 20",
+      "productId": 20
+    }
   ]
 }

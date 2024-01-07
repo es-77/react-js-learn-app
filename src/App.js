@@ -83,6 +83,7 @@ import PushNotification from './firebase_folder/PushNotification';
 import FormDataExample from './form_covert_into/FormDataExample';
 import AdminForm from './form_covert_into/AdminForm';
 import FormRepeater from './form_covert_into/FormRepeater';
+import TableRender from './form_covert_into/TableRender';
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -203,7 +204,8 @@ function App() {
 
       <QueryClientProvider client={queryClient}>
         {/* <AdminForm /> */}
-        <FormRepeater />
+        {/* <FormRepeater /> */}
+        <TableRender />
       </QueryClientProvider>
 
     </div>
