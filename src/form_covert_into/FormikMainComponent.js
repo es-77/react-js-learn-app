@@ -2,6 +2,7 @@ import React from 'react'
 import FormFormiTemplate from './FormFormiTemplate'
 import UserValidation from './validation/UserValidation';
 import UserInitialValue from './initialValues/UserInitialValue';
+import ToasterMessage from './toaster/ToasterMessage';
 
 function FormikMainComponent() {
 
@@ -15,6 +16,8 @@ function FormikMainComponent() {
     return (
         <>
             <FormFormiTemplate validationSchema={validationSchema} InitialValues={InitialValues} handleFormikSubmit={handleFormikSubmit} />
+            <ToasterMessage data={{ id: 'id' }} />
+
         </>
     )
 }

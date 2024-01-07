@@ -14,7 +14,7 @@ const FormikHighOrder = (WrappedComponent) => {
             },
         });
 
-        const { handleSubmit, isSubmitting } = formik;
+        const { handleSubmit } = formik;
 
         return (
             <>
@@ -23,7 +23,7 @@ const FormikHighOrder = (WrappedComponent) => {
                         <WrappedComponent {...props} formik={formik} />
                         <Grid item md={6} xs={12}>
                             <Box display="flex" justifyContent="flex-end">
-                                <Button size={buttonSize ?? "large"} type={buttonType ?? "submit"} variant={buttonVariant ?? "contained"} loading={isSubmitting}>
+                                <Button size={buttonSize ?? "large"} type={buttonType ?? "submit"} variant={buttonVariant ?? "contained"}>
                                     {buttonText ?? 'Save'}
                                 </Button>
                             </Box>
